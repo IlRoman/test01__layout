@@ -1,0 +1,42 @@
+@import "./breakpoints.scss";
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 49px;
+    height: 35px;
+
+    @include for-small {
+        margin-left: 20px;
+        width: 27px;
+        height: 20px;
+    }
+
+    &__elem {
+        width: 20px;
+        border-radius: 20px;
+
+        @include for-small {
+            width: 11px;
+        }
+    }
+
+    &__first-elem {
+        background-color: #9c69e2;
+        height: 20px;
+
+        @include for-small {
+            height: 11px;
+        }
+    }
+
+    &__second-elem {
+        background-color: #f063b8;
+        height: 35px;
+
+        @include for-small {
+            height: 20px;
+        }
+    }
+}

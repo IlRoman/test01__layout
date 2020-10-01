@@ -1,0 +1,97 @@
+@import "../../breakpoints.scss";
+
+.header {
+    height: 97px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: relative;
+    margin-left: 240px;
+
+    @include for-small {
+        height: 44px;
+        justify-content: space-between;
+        margin-left: 20px;
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 20px;
+    font-size: 20px;
+    margin-left: 121px;
+
+    @include for-small {
+        margin-left: 0;
+    }
+
+    &__btn {
+        background-color: white;
+        color: #9c69e2;
+    }
+
+    &__search-wrapper {
+        margin-right: 28px;
+        display: none;
+
+        @include for-small {
+            display: block;
+        }
+    }
+
+    &__menu-wrapper {
+        display: none;
+
+        @include for-small {
+            display: block;
+        }
+    }
+}
+
+.nav-desctop {
+    width: 382px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include for-small {
+        display: none;
+    }
+
+    &__btn {
+        background-color: #fafdfe;
+        color: #4b5d68;
+    }
+
+    &__search-btn {
+        color: #9c69e2;
+    }
+}
+
+.demo-wrapper {
+    width: 210px;
+    height: 60px;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+    position: absolute;
+    top: 56px;
+    right: 240px;
+
+    @include for-small {
+        display: none;
+    }
+}
+
+.demo-btn {
+    width: 210px;
+    height: 60px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    outline: none;
+}
